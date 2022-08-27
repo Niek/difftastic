@@ -43,48 +43,48 @@ pub struct TreeSitterConfig {
 }
 
 extern "C" {
-    fn tree_sitter_bash() -> ts::Language;
-    fn tree_sitter_c() -> ts::Language;
-    fn tree_sitter_c_sharp() -> ts::Language;
-    fn tree_sitter_clojure() -> ts::Language;
-    fn tree_sitter_cmake() -> ts::Language;
-    fn tree_sitter_cpp() -> ts::Language;
-    fn tree_sitter_commonlisp() -> ts::Language;
-    fn tree_sitter_css() -> ts::Language;
-    fn tree_sitter_dart() -> ts::Language;
-    fn tree_sitter_elisp() -> ts::Language;
+    // fn tree_sitter_bash() -> ts::Language;
+    // fn tree_sitter_c() -> ts::Language;
+    // fn tree_sitter_c_sharp() -> ts::Language;
+    // fn tree_sitter_clojure() -> ts::Language;
+    // fn tree_sitter_cmake() -> ts::Language;
+    // fn tree_sitter_cpp() -> ts::Language;
+    // fn tree_sitter_commonlisp() -> ts::Language;
+    // fn tree_sitter_css() -> ts::Language;
+    // fn tree_sitter_dart() -> ts::Language;
+    // fn tree_sitter_elisp() -> ts::Language;
     fn tree_sitter_elixir() -> ts::Language;
     fn tree_sitter_elm() -> ts::Language;
-    fn tree_sitter_elvish() -> ts::Language;
-    fn tree_sitter_gleam() -> ts::Language;
-    fn tree_sitter_go() -> ts::Language;
-    fn tree_sitter_hack() -> ts::Language;
-    fn tree_sitter_haskell() -> ts::Language;
-    fn tree_sitter_hcl() -> ts::Language;
-    fn tree_sitter_html() -> ts::Language;
-    fn tree_sitter_janet_simple() -> ts::Language;
-    fn tree_sitter_java() -> ts::Language;
-    fn tree_sitter_javascript() -> ts::Language;
-    fn tree_sitter_json() -> ts::Language;
-    fn tree_sitter_julia() -> ts::Language;
-    fn tree_sitter_kotlin() -> ts::Language;
-    fn tree_sitter_lua() -> ts::Language;
-    fn tree_sitter_nix() -> ts::Language;
-    fn tree_sitter_ocaml() -> ts::Language;
-    fn tree_sitter_ocaml_interface() -> ts::Language;
-    fn tree_sitter_php() -> ts::Language;
-    fn tree_sitter_perl() -> ts::Language;
-    fn tree_sitter_python() -> ts::Language;
-    fn tree_sitter_ruby() -> ts::Language;
-    fn tree_sitter_rust() -> ts::Language;
-    fn tree_sitter_scala() -> ts::Language;
-    fn tree_sitter_sql() -> ts::Language;
-    fn tree_sitter_swift() -> ts::Language;
-    fn tree_sitter_toml() -> ts::Language;
-    fn tree_sitter_tsx() -> ts::Language;
-    fn tree_sitter_typescript() -> ts::Language;
-    fn tree_sitter_yaml() -> ts::Language;
-    fn tree_sitter_zig() -> ts::Language;
+    // fn tree_sitter_elvish() -> ts::Language;
+    // fn tree_sitter_gleam() -> ts::Language;
+    // fn tree_sitter_go() -> ts::Language;
+    // fn tree_sitter_hack() -> ts::Language;
+    // fn tree_sitter_haskell() -> ts::Language;
+    // fn tree_sitter_hcl() -> ts::Language;
+    // fn tree_sitter_html() -> ts::Language;
+    // fn tree_sitter_janet_simple() -> ts::Language;
+    // fn tree_sitter_java() -> ts::Language;
+    // fn tree_sitter_javascript() -> ts::Language;
+    // fn tree_sitter_json() -> ts::Language;
+    // fn tree_sitter_julia() -> ts::Language;
+    // fn tree_sitter_kotlin() -> ts::Language;
+    // fn tree_sitter_lua() -> ts::Language;
+    // fn tree_sitter_nix() -> ts::Language;
+    // fn tree_sitter_ocaml() -> ts::Language;
+    // fn tree_sitter_ocaml_interface() -> ts::Language;
+    // fn tree_sitter_php() -> ts::Language;
+    // fn tree_sitter_perl() -> ts::Language;
+    // fn tree_sitter_python() -> ts::Language;
+    // fn tree_sitter_ruby() -> ts::Language;
+    // fn tree_sitter_rust() -> ts::Language;
+    // fn tree_sitter_scala() -> ts::Language;
+    // fn tree_sitter_sql() -> ts::Language;
+    // fn tree_sitter_swift() -> ts::Language;
+    // fn tree_sitter_toml() -> ts::Language;
+    // fn tree_sitter_tsx() -> ts::Language;
+    // fn tree_sitter_typescript() -> ts::Language;
+    // fn tree_sitter_yaml() -> ts::Language;
+    // fn tree_sitter_zig() -> ts::Language;
 }
 
 // TODO: begin/end and object/end.
@@ -101,7 +101,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
     use guess::Language::*;
     match language {
         Bash => {
-            let language = unsafe { tree_sitter_bash() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Bash",
                 language,
@@ -117,7 +117,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         C => {
-            let language = unsafe { tree_sitter_c() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "C",
                 language,
@@ -131,7 +131,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         CPlusPlus => {
-            let language = unsafe { tree_sitter_cpp() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "C++",
                 language,
@@ -150,7 +150,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Clojure => {
-            let language = unsafe { tree_sitter_clojure() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Clojure",
                 language,
@@ -166,7 +166,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         CMake => {
-            let language = unsafe { tree_sitter_cmake() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "CMake",
                 language,
@@ -180,7 +180,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         CommonLisp => {
-            let language = unsafe { tree_sitter_commonlisp() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Common Lisp",
                 language,
@@ -190,7 +190,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         CSharp => {
-            let language = unsafe { tree_sitter_c_sharp() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "C#",
                 language,
@@ -210,7 +210,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Css => {
-            let language = unsafe { tree_sitter_css() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "CSS",
                 language,
@@ -224,7 +224,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Dart => {
-            let language = unsafe { tree_sitter_dart() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Dart",
                 language,
@@ -238,7 +238,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         EmacsLisp => {
-            let language = unsafe { tree_sitter_elisp() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Emacs Lisp",
                 language,
@@ -284,7 +284,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Elvish => {
-            let language = unsafe { tree_sitter_elvish() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Elvish",
                 language,
@@ -298,7 +298,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Gleam => {
-            let language = unsafe { tree_sitter_gleam() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Gleam",
                 language,
@@ -312,7 +312,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Go => {
-            let language = unsafe { tree_sitter_go() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Go",
                 language,
@@ -330,7 +330,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Hack => {
-            let language = unsafe { tree_sitter_hack() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Hack",
                 language,
@@ -344,7 +344,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Haskell => {
-            let language = unsafe { tree_sitter_haskell() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Haskell",
                 language,
@@ -358,7 +358,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Hcl => {
-            let language = unsafe { tree_sitter_hcl() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Hcl",
                 language,
@@ -379,7 +379,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Html => {
-            let language = unsafe { tree_sitter_html() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "HTML",
                 language,
@@ -403,7 +403,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Janet => {
-            let language = unsafe { tree_sitter_janet_simple() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Janet",
                 language,
@@ -426,7 +426,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Java => {
-            let language = unsafe { tree_sitter_java() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Java",
                 language,
@@ -440,7 +440,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         JavaScript | Jsx => {
-            let language = unsafe { tree_sitter_javascript() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "JavaScript",
                 language,
@@ -464,7 +464,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Json => {
-            let language = unsafe { tree_sitter_json() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "JSON",
                 language,
@@ -478,7 +478,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Julia => {
-            let language = unsafe { tree_sitter_julia() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Julia",
                 language,
@@ -499,7 +499,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Kotlin => {
-            let language = unsafe { tree_sitter_kotlin() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Kotlin",
                 language,
@@ -517,7 +517,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Lua => {
-            let language = unsafe { tree_sitter_lua() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Lua",
                 language,
@@ -533,7 +533,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Nix => {
-            let language = unsafe { tree_sitter_nix() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Nix",
                 language,
@@ -549,7 +549,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         OCaml => {
-            let language = unsafe { tree_sitter_ocaml() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "OCaml",
                 language,
@@ -563,7 +563,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         OCamlInterface => {
-            let language = unsafe { tree_sitter_ocaml_interface() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "OCaml Interface",
                 language,
@@ -577,7 +577,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Php => {
-            let language = unsafe { tree_sitter_php() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "PHP",
                 language,
@@ -591,7 +591,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Perl => {
-            let language = unsafe { tree_sitter_perl() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Perl",
                 language,
@@ -616,7 +616,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Python => {
-            let language = unsafe { tree_sitter_python() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Python",
                 language,
@@ -630,7 +630,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Ruby => {
-            let language = unsafe { tree_sitter_ruby() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Ruby",
                 language,
@@ -654,7 +654,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Rust => {
-            let language = unsafe { tree_sitter_rust() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Rust",
                 language,
@@ -668,7 +668,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Scala => {
-            let language = unsafe { tree_sitter_scala() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Scala",
                 language,
@@ -682,7 +682,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Sql => {
-            let language = unsafe { tree_sitter_sql() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "SQL",
                 language,
@@ -696,7 +696,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Swift => {
-            let language = unsafe { tree_sitter_swift() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Swift",
                 language,
@@ -710,7 +710,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Toml => {
-            let language = unsafe { tree_sitter_toml() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "TOML",
                 language,
@@ -724,7 +724,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Tsx => {
-            let language = unsafe { tree_sitter_tsx() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "TypeScript TSX",
                 language,
@@ -741,7 +741,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         TypeScript => {
-            let language = unsafe { tree_sitter_typescript() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "TypeScript",
                 language,
@@ -760,7 +760,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Yaml => {
-            let language = unsafe { tree_sitter_yaml() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "YAML",
                 language,
@@ -781,7 +781,7 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
             }
         }
         Zig => {
-            let language = unsafe { tree_sitter_zig() };
+            let language = unsafe { tree_sitter_elm() };
             TreeSitterConfig {
                 name: "Zig",
                 language,
