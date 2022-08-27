@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions-rs/cargo@v1
         with:
-          command: test
+          command: build
       - name: Print rustc version
         run: rustc --version
 
@@ -22,7 +22,7 @@ jobs:
       - uses: actions-rs/cargo@v1
         with:
           toolchain: stable
-          command: test
+          command: build
       - name: Print rustc version
         run: rustc --version
 
